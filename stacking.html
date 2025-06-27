@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<style>
+p{position:absolute;text-align:center;border:solid thick black;padding:3em;width:600px;}
+.box1{position:absolute;left:200px;top:100px;z-index:0;background-color:white;}
+.box2{position:absolute;left:300px;top:150px;z-index:1;background-color:blue;}
+.box3{position:absolute;left:400px;top:200px;z-index:2;background-color:red;}
+</style>
+<script>
+var top="para3";
+function totop(newtop)
+{
+var domnew=document.getElementById(newtop).style;
+var domnew=document.getElementById(top).style;
+domnew.zIndex=10;
+domtop.zIndex=0;
+top=newtop;
+
+
+}
+</script>
+</head>
+<body>
+<p class="box1" id="para1" onmouseover="totop('para1')">First Layer</p>
+<p class="box2" id="para2" onmouseover="totop('para2')">Second Layer</p>
+<p class="box3" id="para3" onmouseover="totop('para3')">Third Layer</p>
+</body>
+</html>
